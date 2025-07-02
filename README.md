@@ -12,6 +12,7 @@ Lists of packages, services and manuals related to web scraping.
 * [Web Scraping Manuals](https://github.com/lorien/awesome-web-scraping/blob/master/manuals.md) - list of articles and books teaching web scraping
 * [dhamaniasad / HeadlessBrowsers](https://github.com/dhamaniasad/HeadlessBrowsers) - list of (almost) all headless web browsers in existence
 * [DNS over HTTPS providers](https://github.com/curl/curl/wiki/DNS-over-HTTPS) - list of DNS over HTTPs providers
+* [Awesome Pastebins](https://github.com/lorien/awesome-pastebins) - list of pastebin sites
 
 ## Captcha Solving Services
 
@@ -23,8 +24,8 @@ Lists of packages, services and manuals related to web scraping.
 * https://forum.antichat.com/forums/147/
 
 ## Telegram Discussion Groups
-* [@grablab](https://t.me/grablab) - English talks
-* [@grablab_ru](https://t.me/grablab_ru) - Russian talks
+* [@grablab](https://t.me/grablab) - talks in English
+* [@grablab_ru](https://t.me/grablab_ru) - talks in Russian
 
 ## How to Contribute to This List
 

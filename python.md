@@ -11,21 +11,19 @@ This list contains python libraries related to web scraping and data processing
 * [Structured Formats](#structured-formats)
 * [Serialization](#serialization)
 * [Natural Language Processing](#natural-language-processing)
-* [Browser automation](#browser-automation)
+* [Browser Automation](#browser-automation)
 * [Multiprocessing](#multiprocessing)
 * [Job Queue](#job-queue)
 * [Message Queue](#message-queue)
 * [Cloud Computing](#cloud-computing)
-* [Email](#email)
 * [URL and Network Address](#url-and-network-address)
-* [Web Content Extraction](#web-content-extraction)
+* [Web Automation](#web-automation)
 * [Asynchronous](#asynchronous)
 * [WebSocket](#websocket)
 * [DNS Resolving](#dns-resolving)
 * [Computer Vision](#computer-vision)
 * [Proxy Server](#proxy-server)
 * [Whois](#whois)
-* [Website Specific Scraper](#website-specific-scraper)
 * [JavaScript Engine Bindings](#javascript-engine-bindings)
 * [Captcha Solving](#captcha-solving)
 * [Other Python Lists](#other-python-lists)
@@ -71,7 +69,8 @@ This list contains python libraries related to web scraping and data processing
 * [cola](https://github.com/chineking/cola) - A distributed crawling framework.
 * [frontera](https://github.com/scrapinghub/frontera) - A scalable frontier for web crawlers
 * [dude](https://github.com/roniemartinez/dude) - A simple framework for writing web scrapers using decorators.
-* [Scrapegraph-ai]([https://github.com/roniemartinez/dude](https://github.com/VinciGit00/Scrapegraph-ai)) - An open source library for making scraping with the use of the ai
+* [ScrapegrphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai) - Web scraping framework that uses AI for extracting data
+
 ### Web Scraping : Tools
 
 * [portia](https://github.com/scrapinghub/portia) - Visual scraping for Scrapy.
@@ -253,7 +252,13 @@ Libraries for parsing and manipulating specific text formats.
 * [bookmarks-parser](https://github.com/bookmarks-tools/bookmarks-parser) - Parses Firefox/Chrome HTML bookmarks files
 
 ### Structured Formats : JavaScript Object
+
 * [chompjs](https://github.com/Nykakin/chompjs) - Parsing JavaScript objects into Python dictionaries
+
+### Structured Formats : Email
+
+* [flanker](https://github.com/mailgun/flanker) - A email address and Mime parsing library.
+* [Talon](https://github.com/mailgun/talon) - Mailgun library to extract message quotations and signatures.
 
 ## Serialization
 
@@ -272,7 +277,7 @@ Libraries for working with human languages.
 * [spacy](https://github.com/explosion/spaCy) - Enables using State-of-the-Art Deep Learning models for common NLP tasks.
 * [fastai](https://github.com/fastai/fastai) - Deep Learning library with free video tutorials + active forum community, downside of lib: GPU needed
 * [gensim](https://github.com/RaRe-Technologies/gensim) -  library for topic modeling, document indexing and similarity retrieval with large corpora
-* [Pattern](http://www.clips.ua.ac.be/pattern) - A web mining module for the Python. It has tools for natural language processing, machine learning, among others.
+* [Pattern](https://github.com/clips/pattern) - A web mining module for the Python. It has tools for natural language processing, machine learning, among others.
 * [TextBlob](http://textblob.readthedocs.org/) - Providing a consistent API for diving into common NLP tasks. Stands on the giant shoulders of NLTK and Pattern.
 * [jieba](https://github.com/fxsjy/jieba) - Chinese Words Segmentation Utilities.
 * [SnowNLP](https://github.com/isnowfy/snownlp) - A library for processing Chinese text.
@@ -286,7 +291,7 @@ Libraries for working with human languages.
 
 ## Browser Automation
 
-### Browser Automation : Browsers
+### Browser Automation : Drivers
 
 * [selenium](http://selenium-python.readthedocs.io/) - automating real browsers (Chrome, Firefox, Opera, IE)
 * [Ghost.py](http://carrerasrodrigo.github.io/Ghost.py/) - wrapper of QtWebKit (requires PyQT)
@@ -297,6 +302,11 @@ Libraries for working with human languages.
 * [pyppeteer](https://github.com/miyakogi/pyppeteer) - Headless chrome/chromium automation library (unofficial port of puppeteer)
 * [Playwright](https://github.com/microsoft/playwright-python) - Playwright is a Python library to automate Chromium, Firefox and WebKit browsers with a single API
 * [seleniumbase](https://github.com/seleniumbase/SeleniumBase) - Python framework for Web/UI testing + RPA. 🤖 🏰 Fast, easy, and reliable.
+
+### Browser Automation : Frameworks
+
+* [botasaurus](https://github.com/omkarcloud/botasaurus) - all-in-one web scraping framework
+* [crawlee](https://github.com/apify/crawlee-python) - A web scraping and browser automation library for Python to build reliable crawlers
 
 ### Browser Automation : Tools
 
@@ -342,13 +352,6 @@ Libraries for asynchronous networking programming.
 * [minigun-requests](https://github.com/umihico/minigun-requests) - Web scraping API to outsource tons of GET & xpath to cloud computing
 * [pythonista-chromeless](https://github.com/umihico/pythonista-chromeless) - AWS lambda which execute given python code on selenium
 
-## Email
-
-Libraries for parsing email.
-
-* [flanker](https://github.com/mailgun/flanker) - A email address and Mime parsing library.
-* [Talon](https://github.com/mailgun/talon) - Mailgun library to extract message quotations and signatures.
-
 ## URL and Network Address
 
 Libraries for parsing/modifying URLs, network addresses, domain names.
@@ -357,7 +360,7 @@ Libraries for parsing/modifying URLs, network addresses, domain names.
 
 * [furl](https://github.com/gruns/furl) - A small Python library that makes manipulating URLs simple.
 * [purl](https://github.com/codeinthehole/purl) - A simple, immutable URL class with a clean API for interrogation and manipulation.
-* [urllib.parse](https://docs.python.org/3/library/urllib.parse.html) - interface to break Uniform Resource Locator (URL) strings up in components (addressing scheme, network location, path etc.), to combine the components back into a URL string, and to convert a “relative URL” to an absolute URL given a “base URL.” (stdlib)
+* [urllib.parse](https://docs.python.org/3/library/urllib.parse.html) - interface to break URL strings up in components (addressing scheme, network location, path etc.), to combine the components back into a URL string, and to convert a “relative URL” to an absolute URL.
 
 ### URL and Network Address : Network Address
 
@@ -369,9 +372,11 @@ Libraries for parsing/modifying URLs, network addresses, domain names.
 * [tldextract](https://github.com/john-kurkowski/tldextract) - Accurately separate the TLD from the registered domain and subdomains of a URL, using the Public Suffix List.
 * [find_domains](https://github.com/rushter/find_domains) - a library to search for domain names in text data
 
-## Web Content Extraction
+## Web Automation
 
-Libraries for extracting web contents.
+Tools to automate multiple actions on a website.
+
+### Web Automation :: Content Extraction
 
 * [newspaper](https://github.com/codelucas/newspaper) - News extraction, article extraction and content curation in Python.
 * [python-goose](https://github.com/grangier/python-goose) - HTML Content/Article Extractor.
@@ -392,6 +397,11 @@ Libraries for extracting web contents.
 * [advertools](https://github.com/eliasdabbas/advertools) - A customizable crawler to analyze SEO and content of pages and websites.
 * [photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT
 * [extractnet](https://github.com/currentsapi/extractnet) - Machine Learning based content and metadata extraction in Python 3
+
+### Web Automation : Account Creation
+
+* [ninjemail](https://github.com/david96182/ninjemail) - Python library for automated email account creation for different providers.
+
 
 ## WebSocket
 
@@ -423,12 +433,6 @@ Libraries for working with WebSocket.
 ## Whois
 
 * [python-whois](https://github.com/joepie91/python-whois) - A python module for retrieving and parsing WHOIS data
-
-## Website Specific Scraper
-* [twitter-scraper](https://github.com/bisguzar/twitter-scraper) - Scrape the Twitter Frontend API without authentication
-* [Ultimate-Facebook-Scraper](https://github.com/harismuneer/Ultimate-Facebook-Scraper) - A bot which scrapes almost everything about a Facebook user's profile
-* [instagram-scraper](https://github.com/rarcega/instagram-scraper) - Scrapes an instagram user's photos and videos
-* [dribbble-py](https://github.com/rand-net/dribbble-py) - Scrapes an dribble user's profile
 
 ## JavaScript Engine Bindings
 
